@@ -1,0 +1,12 @@
+version: 1
+services:
+  - type: web
+    name: were-wolf
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 16
